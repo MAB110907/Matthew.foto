@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+  =============================================================
+  PROJECT PAGE  (project-6.html)
+  =============================================================
+  This is ONE project's page. It has space for:
+    - a title
+    - images
+    - a description
+  Its images live in assets/project-6 — drop your own files in
+  there and update the <img> paths below to match.
+  =============================================================
+-->
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colonial Knob Bush Walk — Matthew.foto</title>
+  <!-- The little icon in the browser tab. Replace assets/favicon.svg with your own. -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip link: lets keyboard users jump straight to the main content. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Same nav as the home page. The logo links home. -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="" class="nav__logo-image" />
+        Matthew.foto
+      </a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links">
+        <a href="index.html#photography">Photography</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="section container project">
+
+      <!-- A link back to the list of projects -->
+      <a class="project__back" href="index.html#photography"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"></path></svg>Back to Photography Gallery</a>
+
+      <h1 class="project__title">Colonial Knob Bush Walk</h1>
+
+      <p class="project__meta">Nature photography · 2026</p>
+
+      <!-- ===== PROJECT DESCRIPTION ===== -->
+      <div class="project__description">
+        <p>
+          Bush Walk up Colonial Knob with my mate Christian.
+        </p>
+      </div>
+
+      <!-- ===== PROJECT IMAGES ===== -->
+      <div class="project__gallery">
+        <img src="assets/project-6/01.jpg" alt="Person in a black hoodie and jeans walking away along a narrow bush track under arching, vine-covered branches" />
+        <img src="assets/project-6/02.jpg" alt="Low-angle view of a young nikau palm in dappled sunlight, surrounded by bush and vines" />
+        <img src="assets/project-6/03.jpg" alt="Backlit nikau palm fronds glowing green, with a narrow dirt track curving away on the right" />
+        <img src="assets/project-6/04.jpg" alt="Close-up of a weathered tree trunk with dark holes, beside a blurred canopy of glowing bokeh circles" />
+        <img src="assets/project-6/05.jpg" alt="Tangled bush with a moss- and fern-covered trunk, and nikau fronds catching sunlight at the bottom right" />
+        <img src="assets/project-6/06.jpg" alt="Bright yellow gorse flowers in the foreground, with a blurred town and harbour below under a blue sky and white clouds" />
+        <img src="assets/project-6/07.jpg" alt="Wide view from above of a bay and a green headland, with a distant island on the horizon under a clear blue sky" />
+        <img src="assets/project-6/08.jpg" alt="Mountain bike track zigzagging down a grassy hillside past a power pole with a transformer, with a bay and suburb below" />
+        <img src="assets/project-6/09.jpg" alt="Wide view over an industrial area and suburbs in a valley, with a motorway curving past green hills and big white clouds above" />
+        <img src="assets/project-6/10.jpg" alt="Looking down a grassy hillside to an inlet and industrial area, under a blue sky with scattered clouds" />
+        <img src="assets/project-6/11.jpg" alt="Cluster of white daisies with yellow centres and pink buds against a dark blurred background" />
+        <img src="assets/project-6/12.jpg" alt="Tall eucalyptus trees against a blue sky, with the dark green fronds of a tree fern in the foreground" />
+        <img src="assets/project-6/13.jpg" alt="Blue trail sign reading Tumeke Entry 1, Grade 3 Intermediate, To Raina St, Descending MTB Only, mounted on a wooden post" />
+        <img src="assets/project-6/14.jpg" alt="Black-stemmed tree fern spreading its green fronds, with eucalyptus trees and orange-tinged leaves behind" />
+        <img src="assets/project-6/15.jpg" alt="Dark, wet rock face with moss, small plants and a thin branch" />
+        <img src="assets/project-6/16.jpg" alt="Person in a black hoodie from behind, photographing a fern with a camera in thick green bush" />
+        <img src="assets/project-6/17.jpg" alt="Close-up of an unfurling fern koru in focus, with a blurred green and silver background" />
+        <img src="assets/project-6/18.jpg" alt="Underside of tree fern fronds against a blue sky with white clouds" />
+        <img src="assets/project-6/19.jpg" alt="Communication tower on a hilltop under a deep blue sky, with bush and gorse below" />
+        <img src="assets/project-6/20.jpg" alt="Tall eucalyptus trees reaching up into a blue sky with white clouds" />
+      </div>
+      <!-- Back to top button -->
+      <div class="project__top">
+        <button type="button" class="arrow-btn project__top-btn" data-scroll-to="top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+          <span>Back to top</span>
+        </button>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Matthew.foto</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

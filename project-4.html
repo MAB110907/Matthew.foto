@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+  =============================================================
+  PROJECT PAGE  (project-4.html)
+  =============================================================
+  This is ONE project's page. It has space for:
+    - a title
+    - images
+    - a description
+  Its images live in assets/project-4 — drop your own files in
+  there and update the <img> paths below to match.
+  =============================================================
+-->
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustang Cali Special — Matthew.foto</title>
+  <!-- The little icon in the browser tab. Replace assets/favicon.svg with your own. -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip link: lets keyboard users jump straight to the main content. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Same nav as the home page. The logo links home. -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="" class="nav__logo-image" />
+        Matthew.foto
+      </a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links">
+        <a href="index.html#photography">Photography</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="section container project">
+
+      <!-- A link back to the list of projects -->
+      <a class="project__back" href="index.html#photography"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"></path></svg>Back to Photography Gallery</a>
+
+      <h1 class="project__title">Mustang Cali Special</h1>
+
+      <p class="project__meta">Car photography · 2026</p>
+
+      <!-- ===== PROJECT DESCRIPTION ===== -->
+      <div class="project__description">
+        <p>
+          Uncle Rick's 2011 Ford Mustang GT Boss 302 California Special out in the sun on a rare still Wellington day.
+        </p>
+      </div>
+
+      <!-- ===== PROJECT IMAGES ===== -->
+      <div class="project__gallery">
+        <img src="assets/project-4/01.jpg" alt="Close-up of the black GT/CS side stripe and badge on the silver Mustang, trees blurred behind" />
+        <img src="assets/project-4/02.jpg" alt="Silver Mustang's side mirror and rear quarter window, with the GT/CS stripe at the bottom, parked on a tree-lined driveway" />
+        <img src="assets/project-4/03.jpg" alt="Dark close-up of the engine cover embossed Powered by Ford, with the yellow oil cap in the corner" />
+        <img src="assets/project-4/04.jpg" alt="Wide close-up of the strut brace with the Mustang GT plaque over the dark engine bay" />
+        <img src="assets/project-4/05.jpg" alt="Close-up of the brushed-metal Mustang GT plaque on the strut brace, intake runners below" />
+        <img src="assets/project-4/06.jpg" alt="Dark close-up of the 5.0 badge and 32V TiVCT lettering on the engine cover" />
+        <img src="assets/project-4/07.jpg" alt="Engine bay with the bonnet open, showing the 32V TiVCT 5.0 engine cover and strut brace in the sun" />
+        <img src="assets/project-4/08.jpg" alt="Rear quarter window louvres and spoiler on the silver Mustang, with a green hill and blue sky behind" />
+        <img src="assets/project-4/09.jpg" alt="Close-up of the speedometer through the glass, with the hills reflected in the lens" />
+        <img src="assets/project-4/10.jpg" alt="Open driver's door showing the illuminated Mustang scuff plate, pedals and seat" />
+        <img src="assets/project-4/11.jpg" alt="Steering wheel, dashboard and gear shifter seen through the driver's window, with a green paddock outside" />
+        <img src="assets/project-4/12.jpg" alt="Close-up of the wheel centre cap with the running pony badge and chrome wheel nuts" />
+        <img src="assets/project-4/13.jpg" alt="Close-up of the chrome California Special badge with a running pony, on the black rear panel" />
+        <img src="assets/project-4/14.jpg" alt="Rear corner of the silver Mustang with its spoiler and antenna, against a deep blue sky and a shed" />
+        <img src="assets/project-4/15.jpg" alt="Front wheel and door of the silver Mustang with the GT/CS stripe, in front of a corrugated shed and a white kei truck" />
+        <img src="assets/project-4/16.jpg" alt="Rear three-quarter view of the silver Mustang on a driveway, blue sky above and a white fence behind" />
+        <img src="assets/project-4/17.jpg" alt="Low rear view of the silver Mustang with its California Special badge, red tail lights and twin exhausts" />
+        <img src="assets/project-4/18.jpg" alt="Close-up of the running pony badge in the Mustang's chrome grille, with its reflection in the bonnet" />
+        <img src="assets/project-4/19.jpg" alt="Front corner of the silver Mustang showing the headlight, side marker, fog light and front wheel" />
+        <img src="assets/project-4/20.jpg" alt="Head-on front view of the silver Mustang parked on a driveway between trees" />
+      </div>
+      <!-- Back to top button -->
+      <div class="project__top">
+        <button type="button" class="arrow-btn project__top-btn" data-scroll-to="top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+          <span>Back to top</span>
+        </button>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Matthew.foto</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

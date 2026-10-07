@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+  =============================================================
+  PROJECT PAGE  (project-2.html)
+  =============================================================
+  This is ONE project's page. It has space for:
+    - a title
+    - images
+    - a description
+  Its images live in assets/project-2 — drop your own files in
+  there and update the <img> paths below to match.
+  =============================================================
+-->
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dad's XY Typology — Matthew.foto</title>
+  <!-- The little icon in the browser tab. Replace assets/favicon.svg with your own. -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip link: lets keyboard users jump straight to the main content. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Same nav as the home page. The logo links home. -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="" class="nav__logo-image" />
+        Matthew.foto
+      </a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links">
+        <a href="index.html#photography">Photography</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="section container project">
+
+      <!-- A link back to the list of projects -->
+      <a class="project__back" href="index.html#photography"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"></path></svg>Back to Photography Gallery</a>
+
+      <h1 class="project__title">Dad's XY Typology</h1>
+
+      <p class="project__meta">Typology series · 2026</p>
+
+      <!-- ===== PROJECT DESCRIPTION ===== -->
+      <div class="project__description">
+        <p>
+         Typology of my Dad's 1971 XY Ford Falcon 500. Photos were taken around the South Coast and the southern suburbs of Wellington City.
+        </p>
+      </div>
+
+      <!-- ===== PROJECT IMAGES ===== -->
+      <!--
+        This gallery uses a strict 3-per-row grid (not the masonry layout)
+        because the row order matters here: rows 1, 3 and 5 go
+        right / left / right, rows 2 and 4 go left / right / left. Only 8
+        of the 18 photos face right, so row 6's middle slot is a left-
+        facing photo instead.
+      -->
+      <div class="project__gallery project__gallery--grid">
+        <img src="assets/project-2/01.jpg" alt="Purple Ford Falcon wagon parked in a coastal car park beside a driftwood log, nose pointing right" />
+        <img src="assets/project-2/02.jpg" alt="Purple Ford Falcon wagon parked below steep green hills, nose pointing left, red SUV and traffic cone behind" />
+        <img src="assets/project-2/03.jpg" alt="Purple Ford Falcon wagon parked beside a green hill and inlet, nose pointing right" />
+
+        <img src="assets/project-2/04.jpg" alt="Purple Ford Falcon wagon parked in a seaside car park, nose pointing left, ocean behind" />
+        <img src="assets/project-2/05.jpg" alt="Purple Ford Falcon wagon parked near a playground with wooden bollards in front, nose pointing right" />
+        <img src="assets/project-2/06.jpg" alt="Purple Ford Falcon wagon parked on a coastal road, nose pointing left, ocean and rocks behind" />
+
+        <img src="assets/project-2/07.jpg" alt="Purple Ford Falcon wagon parked in front of white houses and a steep hill, nose pointing right" />
+        <img src="assets/project-2/08.jpg" alt="Purple Ford Falcon wagon parked by the water, nose pointing left, mountains across the bay" />
+        <img src="assets/project-2/09.jpg" alt="Purple Ford Falcon wagon parked on a suburban street, nose pointing right" />
+
+        <img src="assets/project-2/10.jpg" alt="Purple Ford Falcon wagon parked on a coastal road, nose pointing left, mountains and a tree behind" />
+        <img src="assets/project-2/11.jpg" alt="Purple Ford Falcon wagon parked in front of a white garage, nose pointing right" />
+        <img src="assets/project-2/12.jpg" alt="Purple Ford Falcon wagon parked on a village street under trees, nose pointing left" />
+
+        <img src="assets/project-2/13.jpg" alt="Purple Ford Falcon wagon parked below a green hillside, nose pointing right" />
+        <img src="assets/project-2/14.jpg" alt="Purple Ford Falcon wagon parked by a rock wall, nose pointing left, hills across the water" />
+        <img src="assets/project-2/15.jpg" alt="Purple Ford Falcon wagon parked below pine forest and a scaffolded building, nose pointing right" />
+
+        <img src="assets/project-2/16.jpg" alt="Purple Ford Falcon wagon parked by a pier, nose pointing left, water behind" />
+        <img src="assets/project-2/17.jpg" alt="Purple Ford Falcon wagon parked by the harbour, nose pointing left, hills across the water" />
+        <img src="assets/project-2/18.jpg" alt="Purple Ford Falcon wagon parked on grass above the water, nose pointing left, hills in the distance" />
+      </div>
+      <!-- Back to top button -->
+      <div class="project__top">
+        <button type="button" class="arrow-btn project__top-btn" data-scroll-to="top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+          <span>Back to top</span>
+        </button>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Matthew.foto</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

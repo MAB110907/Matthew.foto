@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+  =============================================================
+  PROJECT PAGE  (project-1.html)
+  =============================================================
+  This is ONE project's page. It has space for:
+    - a title
+    - images
+    - a description
+  Its images live in assets/project-1 — drop your own files in
+  there and update the <img> paths below to match.
+  =============================================================
+-->
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antonino's Street Triple — Matthew.foto</title>
+  <!-- The little icon in the browser tab. Replace assets/favicon.svg with your own. -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip link: lets keyboard users jump straight to the main content. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Same nav as the home page. The logo links home. -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="" class="nav__logo-image" />
+        Matthew.foto
+      </a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links">
+        <a href="index.html#photography">Photography</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="section container project">
+
+      <!-- A link back to the list of projects -->
+      <a class="project__back" href="index.html#photography"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"></path></svg>Back to Photography Gallery</a>
+
+      <h1 class="project__title">Antonino's Street Triple</h1>
+
+      <p class="project__meta">Motorcycle photography · 2026</p>
+
+      <!-- ===== PROJECT DESCRIPTION ===== -->
+      <div class="project__description">
+        <p>
+Triumph Street Triple photoshoot at Red Rocks and Moa Point at sunset in September with my cousin, Antonino.
+        </p>
+      </div>
+
+      <!-- ===== PROJECT IMAGES ===== -->
+      <div class="project__gallery">
+        <img src="assets/project-1/01.jpg" alt="Front three-quarter view of the white Triumph Street Triple with its headlight lit at dusk, on a rocky coastline" />
+        <img src="assets/project-1/02.jpg" alt="Close-up of the Street Triple's digital dashboard glowing at dusk, showing the odometer and neutral indicator" />
+        <img src="assets/project-1/03.jpg" alt="Close-up of the white tail section and seat cowl against a dusky sky" />
+        <img src="assets/project-1/04.jpg" alt="Close-up of the front headlight fairing with its red and black stripe details" />
+        <img src="assets/project-1/05.jpg" alt="Low-angle silhouette of the bike's engine and front wheel against a sunset sky, with the Street Triple tank badge visible" />
+        <img src="assets/project-1/06.jpg" alt="Close-up of the engine case showing the Triumph logo badge" />
+        <img src="assets/project-1/07.jpg" alt="Close-up side profile of the headlight fairing against dark foliage" />
+        <img src="assets/project-1/08.jpg" alt="Close-up of the fuel tank's 'Street Triple' decal, with a helmet in the foreground" />
+        <img src="assets/project-1/09.jpg" alt="Macro shot of the Triumph tank badge catching the sunset light" />
+        <img src="assets/project-1/10.jpg" alt="Close-up of the headlight and handlebar against a dusk sky, silhouetted rooftops in the background" />
+        <img src="assets/project-1/11.jpg" alt="Front three-quarter view of the bike parked on a street at dusk, houses and a hillside behind it" />
+        <img src="assets/project-1/12.jpg" alt="Front three-quarter close-up of the bike parked by the coast at dusk" />
+        <img src="assets/project-1/13.jpg" alt="Rear three-quarter view of the bike parked on a coastal path at sunset, with a large rock and the ocean beyond" />
+        <img src="assets/project-1/14.jpg" alt="Wide shot of the bike parked on a coastal road at sunset, mountains across the water under a colourful sky" />
+        <img src="assets/project-1/15.jpg" alt="Silhouette of a rider seated on the bike at dusk on a forest road, headlight on" />
+        <img src="assets/project-1/16.jpg" alt="Panned action shot of the rider leaning into a corner on a rural road at dusk" />
+        <img src="assets/project-1/17.jpg" alt="Panned action shot of the rider from behind, leaning through a corner in golden evening light" />
+        <img src="assets/project-1/18.jpg" alt="Panned action shot of the rider cornering in profile, motion blur in warm evening light" />
+        <img src="assets/project-1/19.jpg" alt="Black and white panned action shot of the rider cornering at speed with heavy motion blur" />
+      </div>
+      <!-- Back to top button -->
+      <div class="project__top">
+        <button type="button" class="arrow-btn project__top-btn" data-scroll-to="top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+          <span>Back to top</span>
+        </button>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Matthew.foto</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

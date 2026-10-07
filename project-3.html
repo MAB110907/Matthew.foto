@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+  =============================================================
+  PROJECT PAGE  (project-3.html)
+  =============================================================
+  This is ONE project's page. It has space for:
+    - a title
+    - images
+    - a description
+  Its images live in assets/project-3 — drop your own files in
+  there and update the <img> paths below to match.
+  =============================================================
+-->
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW M2 Competition — Matthew.foto</title>
+  <!-- The little icon in the browser tab. Replace assets/favicon.svg with your own. -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip link: lets keyboard users jump straight to the main content. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Same nav as the home page. The logo links home. -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="" class="nav__logo-image" />
+        Matthew.foto
+      </a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links">
+        <a href="index.html#photography">Photography</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="section container project">
+
+      <!-- A link back to the list of projects -->
+      <a class="project__back" href="index.html#photography"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"></path></svg>Back to Photography Gallery</a>
+
+      <h1 class="project__title">BMW M2 Competition</h1>
+
+      <p class="project__meta">Car photography · 2026</p>
+
+      <!-- ===== PROJECT DESCRIPTION ===== -->
+      <div class="project__description">
+        <p>
+         Ashwin Magan's 2019 BMW M2 Competition. Photos taken on a rainy day in an underground car parking building in Wellington.
+        </p>
+      </div>
+
+      <!-- ===== PROJECT IMAGES ===== -->
+      <div class="project__gallery">
+        <img src="assets/project-3/01.jpg" alt="Close-up of the front headlight and grille glowing yellow in the rain, hood open, on a burnt-orange BMW M2" />
+        <img src="assets/project-3/02.jpg" alt="Close-up of the M2's black M Power engine cover and carbon fibre strut brace in the engine bay" />
+        <img src="assets/project-3/03.jpg" alt="Close-up of the rear taillight glowing red on the wet, burnt-orange bodywork" />
+        <img src="assets/project-3/04.jpg" alt="Close-up of an alloy wheel and BMW centre cap in low light, brake calipers visible behind the spokes" />
+        <img src="assets/project-3/05.jpg" alt="Macro close-up of raindrops beaded on a dark textured panel" />
+        <img src="assets/project-3/06.jpg" alt="Front three-quarter view of the M2 with one headlight lit yellow, parked in a carpark beside a P90 sign, doors open" />
+        <img src="assets/project-3/07.jpg" alt="Head-on close-up of the M2 with both headlights lit yellow, BMW badge and JTA883 number plate visible, doors open" />
+        <img src="assets/project-3/19.jpg" alt="Rear three-quarter view of the M2, tail light lit red, parked in a busy carpark" />
+        <img src="assets/project-3/09.jpg" alt="Close-up of the M2 seat headrest with red stitching and an M2 badge" />
+        <img src="assets/project-3/10.jpg" alt="Motion-blurred close-up of the BMW steering wheel badge" />
+        <img src="assets/project-3/11.jpg" alt="Close-up of the BMW steering wheel and dashboard inside the M2, parked in a dim carpark" />
+        <img src="assets/project-3/12.jpg" alt="Close-up of the rear taillight, fuel cap and wheel on the burnt-orange M2 in a dark carpark" />
+        <img src="assets/project-3/13.jpg" alt="Close-up of a headlight glowing yellow, with a 15 speed sign and parking signage on the wall behind" />
+        <img src="assets/project-3/08.jpg" alt="Front view of the M2 with headlights on, parked in a carpark with both doors open" />
+        <img src="assets/project-3/14.jpg" alt="Front three-quarter view of the M2 in a carpark with its headlights on" />
+        <img src="assets/project-3/15.jpg" alt="Close-up of the BMW M2 Competition badge on the rear, reflecting the red tail light" />
+        <img src="assets/project-3/16.jpg" alt="Side profile close-up of the rear wheel arch, taillight and fuel cap in a carpark" />
+        <img src="assets/project-3/17.jpg" alt="Rear view of the M2 with tail lights glowing red, parked in a carpark, JTA883 number plate visible" />
+        <img src="assets/project-3/18.jpg" alt="Close-up of the front headlight glowing yellow, wheel and BMW badge visible" />
+        <img src="assets/project-3/20.jpg" alt="Front view of the M2 with headlights lit yellow, parked in an empty carpark" />
+      </div>
+      <!-- Back to top button -->
+      <div class="project__top">
+        <button type="button" class="arrow-btn project__top-btn" data-scroll-to="top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+          <span>Back to top</span>
+        </button>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Matthew.foto</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

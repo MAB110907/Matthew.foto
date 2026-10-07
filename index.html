@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--
+  =============================================================
+  HOME PAGE  (index.html)
+  =============================================================
+  This is the front page of your portfolio.
+
+  It has three sections, which cover the minimum requirements
+  from the brief:
+    1. HERO      - your name + one line about you
+    2. WORK      - a grid of your projects       (required)
+    3. ABOUT     - a short paragraph about you    (required)
+
+  Anywhere you see the word REPLACE, that is content for YOU
+  to change. Don't leave any REPLACE text in your final site!
+
+  TIP: Ask Claude things like
+    "Change the hero heading to my name and make the subtitle
+     say I'm a photography student."
+  =============================================================
+-->
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <!-- This meta tag is what makes the site work on phones. Leave it in. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- REPLACE: the browser tab title -->
+  <title>Matthew.foto — Portfolio</title>
+
+  <!-- REPLACE: a one-line description search engines show -->
+  <meta name="description" content="Portfolio of Matthew, a design student at Te Herenga Waka." />
+
+  <!-- The little icon in the browser tab. Replace assets/favicon.svg with your own. -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- If we're coming back from a project (script.js jumps you back to where
+       you were), mark the page straight away so the picture of you at the top
+       never flashes up for a moment before the jump. -->
+  <script>
+    try {
+      var nav = performance.getEntriesByType("navigation")[0];
+      if (/[?&]y=/.test(location.search) || (nav && nav.type === "back_forward")) {
+        document.documentElement.classList.add("returning");
+      }
+    } catch (e) {}
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip link: lets keyboard users jump straight to the main content
+       instead of tabbing through the menu. It's hidden until focused. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== NAVIGATION BAR ===================== -->
+  <header class="site-header">
+    <div class="container nav">
+      <!-- REPLACE: your name / logo text -->
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="" class="nav__logo-image" />
+        Matthew.foto
+      </a>
+
+      <!-- The button below only shows on small screens (phones). -->
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__links">
+        <a href="#photography">Photography</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== 1. HERO ===================== -->
+    <section class="hero">
+      <!-- Picture of you on the far left, back to the wall, looking right. -->
+      <img src="assets/hero-figure.png" alt="Drawn-style side view of Matthew in a colourful dot-art motorcycle helmet and navy jacket, outlined in thick black, with his back to the left edge of the page" class="hero__figure hero__figure--left" />
+
+      <div class="hero__centre">
+        <p class="hero__eyebrow"></p>
+        <!-- REPLACE: your name -->
+        <h1 class="hero__title">
+          <span class="hero__logo-wrap">
+            <img src="assets/logo-hero.png" alt="Matthew.foto" class="hero__logo" />
+          </span>
+        </h1>
+      </div>
+
+      <!-- The same picture flipped: on the far right, back to the right-hand wall, looking left. -->
+      <img src="assets/hero-figure.png" alt="" aria-hidden="true" class="hero__figure hero__figure--right" />
+
+      <!-- Points down to the Photography section, so people know to scroll. -->
+      <button type="button" class="arrow-btn hero__scroll-hint" data-scroll-to="#photography" aria-label="Scroll down to see my photography">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7"></path>
+        </svg>
+      </button>
+    </section>
+
+    <!-- ===================== 2. WORK / PROJECTS (required) ===================== -->
+    <section id="photography" class="section container">
+      <div class="section__head">
+        <h2 class="section__title">Photography Gallery</h2>
+        <button type="button" class="arrow-btn" data-scroll-to="#about" aria-label="Scroll down to About me">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14M5 12l7 7 7-7"></path>
+          </svg>
+        </button>
+        <button type="button" class="arrow-btn" data-scroll-to="top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5M5 12l7-7 7 7"></path>
+          </svg>
+        </button>
+      </div>
+      <p class="section__intro">
+        Shoots.
+      </p>
+
+      <!--
+        Six project cards below, each linking to its own project page
+        (project-1.html ... project-6.html). Each project has its own
+        images folder — assets/project-1, assets/project-2, etc. — drop
+        your image sets in there when you're ready.
+
+        Want more or fewer than 6? Just tell Claude, or copy/delete a
+        whole <a class="card">...</a> block below.
+      -->
+      <div class="grid">
+
+        <!-- PROJECT 1 -->
+        <a class="card" href="project-1.html">
+          <img class="card__image" src="assets/project-1/11.jpg" alt="Front three-quarter view of the white Triumph Street Triple parked on a street at dusk, houses and a hillside behind it" />
+          <div class="card__body">
+            <h3 class="card__title">Antonino's Street Triple</h3>
+            <p class="card__meta">Motorcycle photography · 2026</p>
+          </div>
+        </a>
+
+        <!-- PROJECT 2 -->
+        <a class="card" href="project-2.html">
+          <img class="card__image" src="assets/project-2/11.jpg" alt="Purple Ford Falcon wagon parked on a street in front of a white garage and houses, nose pointing right" />
+          <div class="card__body">
+            <h3 class="card__title">Dad's XY Typology</h3>
+            <p class="card__meta">Typology series · 2026</p>
+          </div>
+        </a>
+
+        <!-- PROJECT 3 -->
+        <a class="card" href="project-3.html">
+          <img class="card__image" src="assets/project-3/20.jpg" alt="Front view of the M2 with headlights lit yellow, parked in an empty carpark" />
+          <div class="card__body">
+            <h3 class="card__title">BMW M2 Competition</h3>
+            <p class="card__meta">Car photography · 2026</p>
+          </div>
+        </a>
+
+        <!-- PROJECT 4 -->
+        <a class="card" href="project-4.html">
+          <img class="card__image" src="assets/project-4/20.jpg" alt="Head-on front view of the silver Ford Mustang California Special parked on a driveway between trees" />
+          <div class="card__body">
+            <h3 class="card__title">Mustang Cali Special</h3>
+            <p class="card__meta">Car photography · 2026</p>
+          </div>
+        </a>
+
+        <!-- PROJECT 5 -->
+        <a class="card" href="project-5.html">
+          <img class="card__image" src="assets/project-5/16.jpg" alt="Beach St street sign above a red stop sign on a power pole, with a pale blue house and power lines against the sky" />
+          <div class="card__body">
+            <h3 class="card__title">South Coast Street Signs</h3>
+            <p class="card__meta">Street photography · 2026</p>
+          </div>
+        </a>
+
+        <!-- PROJECT 6 -->
+        <a class="card" href="project-6.html">
+          <img class="card__image" src="assets/project-6/17.jpg" alt="Close-up of an unfurling fern koru in focus, with a blurred green and silver background" />
+          <div class="card__body">
+            <h3 class="card__title">Colonial Knob Bush Walk</h3>
+            <p class="card__meta">Nature photography · 2026</p>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ===================== 3. ABOUT ME (required) ===================== -->
+    <section id="about" class="section container">
+      <div class="section__head">
+        <h2 class="section__title">About me</h2>
+        <button type="button" class="arrow-btn" data-scroll-to="#photography" aria-label="Back up to Photography Gallery">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5M5 12l7-7 7 7"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="about">
+        <!-- REPLACE the placeholder image in the assets folder,
+             or ask Claude to swap in your own photo. -->
+        <img
+          class="about__photo"
+          src="assets/profile-photo.jpg"
+          alt="Matthew from behind, wearing a full-face motorcycle helmet with a colourful Aboriginal dot-art design, outdoors against green grass"
+        />
+        <div class="about__text">
+          <!-- REPLACE: 2-4 sentences about you. Who are you? What are you
+               studying? What kind of design do you care about? -->
+          <p>
+My name is Matthew, and this website is for sharing my photography. My work mainly consists of photographing vehicles, such as cars and motorbikes, along with extreme sports. But overall, I'll shoot pretty much anything that catches my eye. Hope you enjoy the photos.
+          </p>
+          <p>
+            
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <!-- The year fills in automatically (see script.js). -->
+      <p>© <span id="year"></span> Matthew.foto</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

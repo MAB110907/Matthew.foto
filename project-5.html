@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+  =============================================================
+  PROJECT PAGE  (project-5.html)
+  =============================================================
+  This is ONE project's page. It has space for:
+    - a title
+    - images
+    - a description
+  Its images live in assets/project-5 — drop your own files in
+  there and update the <img> paths below to match.
+  =============================================================
+-->
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>South Coast Street Signs — Matthew.foto</title>
+  <!-- The little icon in the browser tab. Replace assets/favicon.svg with your own. -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip link: lets keyboard users jump straight to the main content. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Same nav as the home page. The logo links home. -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/logo.png" alt="" class="nav__logo-image" />
+        Matthew.foto
+      </a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links">
+        <a href="index.html#photography">Photography</a>
+        <a href="index.html#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="section container project">
+
+      <!-- A link back to the list of projects -->
+      <a class="project__back" href="index.html#photography"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"></path></svg>Back to Photography Gallery</a>
+
+      <h1 class="project__title">South Coast Street Signs</h1>
+
+      <p class="project__meta">Street photography · 2026</p>
+
+      <!-- ===== PROJECT DESCRIPTION ===== -->
+      <div class="project__description">
+        <p>
+          Street signs around the South Coast of Wellington.
+        </p>
+      </div>
+
+      <!-- ===== PROJECT IMAGES ===== -->
+      <div class="project__gallery">
+        <img src="assets/project-5/01.jpg" alt="Green-and-white View Rd 1-3 street sign on a rusty white pole, in front of a white house with a dark green garage door" />
+        <img src="assets/project-5/02.jpg" alt="Houghton Bay Rd and Hungerford Rd street signs on a power pole, with a Metlink bus shelter and bush behind" />
+        <img src="assets/project-5/03.jpg" alt="Cave Rd street sign with a No Exit sign below it, in front of bush-covered hillside and a rooftop" />
+        <img src="assets/project-5/04.jpg" alt="Houghton Bay Rd and The Esplanade street signs with a blue Civil Defence Centre arrow, a curved streetlight and a winding coast road behind" />
+        <img src="assets/project-5/05.jpg" alt="Owhiro Bay Pde street sign against a deep blue sky, with the sea, a container ship and a Taputeranga Marine Reserve sign below" />
+        <img src="assets/project-5/06.jpg" alt="Robertson St and Happy Valley Rd street signs on a timber power pole, with houses and bush on the hill behind" />
+        <img src="assets/project-5/07.jpg" alt="Robertson St street sign on a leaning concrete power pole in front of scrubby bank with small yellow flowers" />
+        <img src="assets/project-5/08.jpg" alt="Frobisher St and Severn St street signs on a rusty pole, in front of silvery plants and aloe" />
+        <img src="assets/project-5/09.jpg" alt="Southern Cross Cres street sign with an arrow and a No Exit sign, in front of a bank of tangled vines and yellow flowers" />
+        <img src="assets/project-5/10.jpg" alt="Two Severn St signs and a No Exit sign on one pole, in front of a grey weatherboard house and a flight of steps" />
+        <img src="assets/project-5/11.jpg" alt="Moselle St and Derwent St street signs on a pole in front of the painted black Island Bay Motors workshop wall" />
+        <img src="assets/project-5/12.jpg" alt="Kellsmere Cres street sign with a No Exit sign, with houses stacked up the green hillside behind" />
+        <img src="assets/project-5/13.jpg" alt="Milne Tce street sign above a City to Sea Walkway sign, against a bright blue sky and green trees" />
+        <img src="assets/project-5/14.jpg" alt="Derwent St street sign on a concrete power pole in front of white weatherboard houses and corrugated roofs" />
+        <img src="assets/project-5/15.jpg" alt="Beach St with a No Exit sign, and Knoll St, on a rusty pole in front of a white weatherboard house" />
+        <img src="assets/project-5/16.jpg" alt="Beach St street sign above a red stop sign on a power pole, with a pale blue house and power lines against the sky" />
+        <img src="assets/project-5/17.jpg" alt="The Esplanade street sign on a wooden post above two parked cars, with the sea, a small boat and a container ship behind, under a big blue sky" />
+        <img src="assets/project-5/18.jpg" alt="Linwood Way street sign with a No Exit sign on a weathered timber pole, in front of a red roof and bush" />
+        <img src="assets/project-5/19.jpg" alt="Tiber St street sign on a concrete pole, framed by leafy branches and a blue sky" />
+        <img src="assets/project-5/20.jpg" alt="Liffey St street sign in front of a Melbourne Rd sign on a white pole, against a pale sky and power lines" />
+      </div>
+      <!-- Back to top button -->
+      <div class="project__top">
+        <button type="button" class="arrow-btn project__top-btn" data-scroll-to="top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+          <span>Back to top</span>
+        </button>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Matthew.foto</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
